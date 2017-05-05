@@ -1,0 +1,86 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hi My Name Is... Baby Baby Click</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style> 
+
+    body {
+      font-family: 'San serif', Arial;
+      padding-top: 30px;
+      background-color: PaleTurquoise; /* boy is the default */
+    }
+
+    .name-box {
+      border-radius: 5px;
+      background-color: white;
+      font-size: 20px;
+    }
+
+    .name-box, .button-box, .controls-box { 
+      padding: 20px;
+      max-width: 300px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .controls-box {
+      font-size: 14px;
+    }
+   
+
+   .btn {
+    cursor: pointer;
+    font-size: 100%;
+    padding: 1em 2em;
+    color: #444;
+    color: rgba(0,0,0,.8);
+    border: 1px solid #999;
+    border: transparent;
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+    </style>
+  </head>
+  <body>
+
+    <div class="name-box">
+    <span id="first_name">&nbsp;</span>
+    <span id="last_name"></span> 
+    </div>
+    <div class="button-box">
+    <a class="btn" onclick="Getnewname()"><span>Baby Baby!</span></a>
+    </div>
+
+    <div class="controls-box">
+    <h3>Controls</h3>
+    <p>
+    <input type="checkbox" id="boySwitch" name="boy" checked="checked" onclick="setBackground(this)"/><label for="boySwitch">Boys' names</label> &nbsp;
+    <input type="checkbox" id="girlSwitch" name="girl" onclick="setBackground(this)"/> <label for="girlSwitch">Girls' names</label>
+    </p>
+
+    <p>
+<!--     <input type="checkbox" id="fictionSwitch" name="fictional" />Fictional names &nbsp; -->
+    <input type="checkbox" id="famousBoySwitch" name="famous" onclick="setBackground(this)"/> <label for="famousBoySwitch">$$$ Boys' Names </label> &nbsp;
+    <input type="checkbox" id="famousGirlSwitch" name="famous" onclick="setBackground(this)"/> <label for="famousGirlSwitch">$$$ Girls' Names </label>
+    </p>
+
+
+    <p>
+    <label for="lastNameInput">Last name &nbsp;<input id="lastNameInput" type="text" name="lastNameInput" />
+    </p>
+
+    </div>
+
+    <script src="./js/popular_boys_names.js"></script>
+    <script src="./js/popular_girls_names.js"></script>
+    <script src="./js/famous_boy.js"></script>
+    <script src="./js/famous_girl.js"></script>
+    <script src="./bbclick.js"></script>
+  </body>
+
+</html>
